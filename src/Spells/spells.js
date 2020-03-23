@@ -22,8 +22,8 @@ function Spells () {
                     {names.spell}
                 </div>
                 <ul className='spells-list'>
-                    <li className='spell-type'>-{names.type}</li>
-                    <li className='spell-effect'>-{names.effect}</li>
+                    <li className='spell-type'>{names.type}</li>
+                    <li className='spell-effect'>{names.effect}</li>
                 </ul>
             </div>
         )
