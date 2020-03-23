@@ -1,0 +1,86 @@
+.houses-link {
+    text-decoration: none;
+    color: #A68549;
+}
+
+.house-list {
+    height: calc(80% - 140px);
+}
+
+.house-names {
+    color: #A68549;
+    margin: 0 25px;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.house-box {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.5fr 1fr 2.5fr .5fr;
+    height: calc(80% - 160px);
+}
+
+.house-ties-img {
+    grid-column: 2;
+    width: 250px;
+    height: 350px;
+}
+
+.house-details {
+    color: #A68549;
+    grid-column: 3;
+    text-align: center;
+}
+
+.house-title {
+    display: inline-block;
+    color: #A68549;
+    margin: 50px 450px;
+}
+
+.link-back {
+    text-decoration: none;
+    color: #A68549;
+}
+
+.bold {
+    display: inline-block;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.stats {
+    margin: 0;
+}
+
+.bold-h4 {
+    display: inline-block;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.inline{
+    display: inline-block;
+    width: 100px;
+}
+
+.house-p-tag {
+    margin: 0;
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: 1fr .1fr;
+    margin: 10px 0 0 220px;
+    max-width: 150px;
+}
+
+.table-values {
+    grid-column: 1;
+}
+
+.table-colors {
+    grid-column: 2;
+}

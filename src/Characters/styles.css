@@ -1,0 +1,19 @@
+.title {
+    text-align: center;
+    color: #A68549;
+}
+
+.character-link {
+    text-decoration: none;
+    color: #A68549;
+}
+
+.char-names {
+    margin: 0 50px;
+    padding: 5px;
+}
+
+.chars-list {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr)
+}

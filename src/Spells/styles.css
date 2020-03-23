@@ -1,0 +1,47 @@
+.spell-container {
+    display: grid;
+    grid-template-rows: .25fr .25fr .25fr;
+    grid-row-gap: 5px;
+    border: 1px solid #592222;
+    border-radius: 10px;
+    justify-content: center;
+    width: 200px;
+    height: 155px;
+    margin: 3px;
+}
+
+.names {
+    grid-row: 1;
+    color: #A68549;
+    margin: 0 25px;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.spells-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.spells-list {
+    list-style-type: none;
+}
+
+.spell-type {
+    grid-row: 2;
+    color: #A68549;
+}
+
+.spell-effect {
+    grid-row: 3;
+    color: #A68549;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 50px;
+}
