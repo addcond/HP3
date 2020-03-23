@@ -8,9 +8,9 @@ function Spells () {
 
     useEffect( () => {
         fetch(`https://www.potterapi.com/v1/spells${key}`)
-            .then(res => res.json())
-            .then(potter => {
-                const spellNames = potter;
+            .then(result => result.json())
+            .then(vjuh => {
+                const spellNames = vjuh;
                 setCharacters(spellNames)
             })
     }, []);

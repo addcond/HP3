@@ -47,36 +47,53 @@ class App extends Component {
 
         return (
             <div className='app'>
-                <Route path='/' render={() => <Redirect to='/home' />} />
+                <Route path='/' render={() =>
+                    <Redirect to='/home' />
+                }
+                />
                 <Header />
                 <Switch>
                     <Route
                         path='/home'
-                        render={() => <Main />}
+                        render={() =>
+                            <Main />
+                        }
                     />
                     <Route
                         path='/characters/:character'
-                        render={(props) => <CharacterDetails {...props}/>}
+                        render={(props) =>
+                            <CharacterDetails {...props}/>
+                        }
                     />
                     <Route
                         path='/characters'
-                        render={() => <Characters />}
+                        render={() =>
+                            <Characters />
+                        }
                     />
                     <Route
                         path='/houses/:house_id'
-                        render={(props) => <HouseDetails {...props}/>}
+                        render={(props) =>
+                            <HouseDetails {...props}/>
+                        }
                     />
                     <Route
                         path='/houses'
-                        render={() => <Houses />}
+                        render={() =>
+                            <Houses />
+                        }
                     />
                     <Route
                         path='/spells'
-                        render={() => <Spells />}
+                        render={() =>
+                            <Spells />
+                        }
                     />
                     <Route
                         path='/hat'
-                        render={() => <Hat />}
+                        render={() =>
+                            <Hat />
+                        }
                     />
                 </Switch>
             </div>
