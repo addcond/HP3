@@ -7,14 +7,14 @@ import SignUp from './SignUp';
 import Characters from './Characters/characters';
 import Header from './Form/header';
 import Main from './Form/mainPage';
-import CharacterDetails from './Details/characterDetails';
+import CharacterDetails from './Characters/characterDetails';
 import Houses from './Houses/houses';
 import HouseDetails from './Houses/houseDetails';
 import Spells from './Spells/spells';
 import Hat from './Hat/hat';
 
 class App extends Component {
-    state = {
+    /*state = {
         loading: true,
         authenticated: false,
         user: null
@@ -36,14 +36,14 @@ class App extends Component {
                 });
             }
         });
-    }
+    }*/
 
     render() {
-        const {authenticated, loading} = this.state;
+        /*const {authenticated, loading} = this.state;
 
         if (loading) {
-            return <p>Loading..</p>;
-        }
+            return <p>Loading</p>;
+        }*/
 
         return (
             <div className='app'>
@@ -62,7 +62,7 @@ class App extends Component {
                     <Route
                         path='/characters/:character'
                         render={(props) =>
-                            <CharacterDetails {...props}/>
+                            <CharacterDetails {...props} />
                         }
                     />
                     <Route
@@ -74,7 +74,7 @@ class App extends Component {
                     <Route
                         path='/houses/:house_id'
                         render={(props) =>
-                            <HouseDetails {...props}/>
+                            <HouseDetails {...props} />
                         }
                     />
                     <Route

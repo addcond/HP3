@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import SignUpView from "./signUpView";
-import { withRouter } from "react-router";
-import app from "../base";
+import React, {Component} from 'react';
+import SignUpView from './signUpView';
+import {withRouter} from 'react-router';
+import app from '../base';
 
 class SignUpContainer extends Component {
     handleSignUp = async event => {

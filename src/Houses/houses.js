@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from "react";
-import {Link} from "react-router-dom";
-import {key} from '../key';
-import "./styles.css";
+import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
+import {key} from '../oneKeyToRuleThemAll';
+import './styles.css';
 
-function Houses () {
+function Houses() {
 
     const [houses, setHouses] = useState([]);
 
     useEffect( () => {
-        fetch(`https://www.potterapi.com/v1/houses${key}`)
-            .then(res => res.json())
-            .then(potter => {
-                setHouses(potter)
+        fetch(`https://www.potterapi.com/v1/houses/${key}`)
+            .then(result => result.json())
+            .then(vjuh => {
+                setHouses(vjuh)
             })
     }, []
     );
 
-    const houNames = houses.map(house => {
+    const houseNames = houses.map(house => {
         const houseId = house._id;
         return(
             <div className='house-names' key={house._id}>
@@ -32,7 +32,7 @@ function Houses () {
                 <h1 className='title'>Houses</h1>
             </header>
             <div className='house-list'>
-                {houNames}
+                {houseNames}
             </div>
         </>
     )

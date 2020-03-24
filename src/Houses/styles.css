@@ -1,6 +1,7 @@
 .houses-link {
     text-decoration: none;
-    color: #A68549;
+    font-style: italic;
+    color: chocolate;
 }
 
 .house-list {
@@ -8,11 +9,11 @@
 }
 
 .house-names {
-    color: #A68549;
-    margin: 0 25px;
+    margin: 0 50px;
     padding: 5px;
     font-weight: bold;
     text-align: center;
+    font-size: 25px;
 }
 
 .house-box {
@@ -22,7 +23,7 @@
     height: calc(80% - 160px);
 }
 
-.house-ties-img {
+.house-estate {
     grid-column: 2;
     width: 250px;
     height: 350px;
@@ -45,17 +46,17 @@
     color: #A68549;
 }
 
-.bold {
+.house-details-header {
     display: inline-block;
     font-weight: bold;
     margin: 5px;
 }
 
-.stats {
+.info {
     margin: 0;
 }
 
-.bold-h4 {
+.house-details-header-h4 {
     display: inline-block;
     font-weight: bold;
     padding: 30px;

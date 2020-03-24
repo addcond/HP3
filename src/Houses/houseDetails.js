@@ -1,17 +1,17 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import {key} from '../key';
+import {key} from '../oneKeyToRuleThemAll';
 import './styles.css';
 
-function HouseDetails (props) {
+function HouseDetails(props) {
 
     const [houseDetails, setHouseDetails] = useState([]);
 
     useEffect( () => {
         fetch(`https://www.potterapi.com/v1/houses/${props.match.params.house_id}${key}`)
-            .then(res => res.json())
-            .then(potter => {
-                setHouseDetails(potter)
+            .then(result => result.json())
+            .then(vjuh => {
+                setHouseDetails(vjuh)
             })
     }, [props.match.params.house_id]
     );
@@ -29,24 +29,24 @@ function HouseDetails (props) {
                 <h1 className='house-title'>{houseDetails[0].name}</h1>
                 <span>
                     <Link to='/houses' className='link-back'>
-                        back to houses
+                        Back to houses
                     </Link>
                 </span>
             </header>
             <div className='house-box'>
-                <img className='house-ties-img' src='https://giantbomb1.cbsistatic.com/uploads/original/0/5911/1854164-ootphogwarts.jpg' alt='Hogwarts' />
+                <img className='house-estate' src='https://media1.tenor.com/images/45ca2767a139758930ba6da849827452/tenor.gif?itemid=11276235' alt='Hogwarts' />
                 <div className='house-details'>
-                    <h3 className='stats'>Stats:</h3>
-                    <h4 className='bold'>House Founder:</h4><span>{houseDetails[0].founder}</span>
+                    <h3 className='info'>House details:</h3>
+                    <h4 className='house-details-header'>House Founder:</h4><span>{houseDetails[0].founder}</span>
                     <br/>
-                    <h4 className='bold'>Head of House:</h4><span>{houseDetails[0].headOfHouse}</span>
+                    <h4 className='house-details-header'>Head of House:</h4><span>{houseDetails[0].headOfHouse}</span>
                     <br/>
-                    <h4 className='bold'>House Ghost:</h4><span>{houseDetails[0].houseGhost}</span>
+                    <h4 className='house-details-header'>House Ghost:</h4><span>{houseDetails[0].houseGhost}</span>
                     <br/>
-                    <h4 className='bold'>Mascot:</h4><span>{houseDetails[0].mascot}</span>
+                    <h4 className='house-details-header'>Mascot:</h4><span>{houseDetails[0].mascot}</span>
                     <br/>
-                    <div className="table-container">
-                        <table align="center" className="table-values">
+                    <div className='table-container'>
+                        <table align='center' className='table-values'>
                             <thead>
                             <tr>
                                 <th>Values:</th>
@@ -60,7 +60,7 @@ function HouseDetails (props) {
                             ))}
                             </tbody>
                         </table>
-                        <table align="center" className="table-colors">
+                        <table align='center' className='table-colors'>
                             <thead>
                             <tr>
                                 <th>Colors:</th>

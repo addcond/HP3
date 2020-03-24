@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {key} from '../key';
+import React, {useEffect, useState} from 'react';
+import {key} from '../oneKeyToRuleThemAll';
 import './styles.css';
 
 function Spells () {
@@ -10,14 +10,13 @@ function Spells () {
         fetch(`https://www.potterapi.com/v1/spells${key}`)
             .then(result => result.json())
             .then(vjuh => {
-                const spellNames = vjuh;
-                setCharacters(spellNames)
+                setCharacters(vjuh)
             })
     }, []);
 
-    const spellNames = spells.map(names => {
+    const spellName = spells.map(names => {
         return(
-            <div className='spell-container' key={names._id}>
+            <div className='spell-container' key={names.id}>
                 <div className='names'>
                     {names.spell}
                 </div>
@@ -34,7 +33,7 @@ function Spells () {
                 <h1 className='title'>Spells</h1>
             </header>
             <div className='spells-list'>
-                {spellNames}
+                {spellName}
             </div>
         </>
     )

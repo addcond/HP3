@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import LogInView from "./logInView";
-import {withRouter} from "react-router";
-import app from "../base";
+import React, {Component} from 'react';
+import LogInView from './logInView';
+import {withRouter} from 'react-router';
+import app from '../base';
 
 class LogInContainer extends Component {
     handleSignUp = async event => {

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {key} from '../key';
-import "./styles.css";
+import {key} from '../oneKeyToRuleThemAll';
+import './styles.css';
 
 function Hat() {
 
@@ -8,7 +8,9 @@ function Hat() {
 
     useEffect( () => {
         fetch(`https://www.potterapi.com/v1/sortingHat${key}`)
-            .then(result => result.json())
+            .then(result =>
+                result.json()
+            )
             .then(vjuh => {
                 setSort(vjuh)
             })

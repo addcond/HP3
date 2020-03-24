@@ -1,19 +1,55 @@
 .title {
     text-align: center;
-    color: #A68549;
+    color: darkred;
+    margin: 20px;
 }
 
 .character-link {
     text-decoration: none;
-    color: #A68549;
+    color: black;
+    font-size: 22px;
 }
 
 .char-names {
     margin: 0 50px;
     padding: 5px;
+    background: whitesmoke;
 }
 
 .chars-list {
     display: grid;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr)
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.characters-box {
+    display: grid;
+    grid-template-rows: 1fr;
+    height: calc(80% - 160px);
+}
+
+.potential-img {
+    margin-left: 325px;
+    width: 276px;
+    height: 342px;
+}
+
+.char-info {
+    color: black;
+    grid-column: 2;
+    text-align: left;
+}
+
+.link-back {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.character-title {
+    display: inline-block;
+    color: rebeccapurple;
+    margin: 30px 350px;
+}
+
+.loading {
+    text-align: center;
 }
