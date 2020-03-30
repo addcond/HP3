@@ -10,24 +10,32 @@ a:hover {
     transform: scale(0.9);
 }
 
-.character-grid {
+.character {
     grid-row: 2;
     grid-column: 1;
+    color: whitesmoke;
 }
 
-.house-grid {
+.house {
     grid-row: 2;
     grid-column: 2;
+    color: whitesmoke;
 }
 
-.spell-grid {
+.spell {
     grid-row: 2;
     grid-column: 3;
+    color: whitesmoke;
 }
 
-.sorting-grid {
+.sorting {
     grid-row: 3;
     grid-column: 2;
+}
+
+.duel {
+    grid-column: 2;
+    color: black;
 }
 
 .container {
@@ -48,7 +56,6 @@ a:hover {
     font-style: italic;
     left: 50%;
     transform: translate(-50%, -20%);
-    color: whitesmoke;
     font-size: 30px;
 }
 

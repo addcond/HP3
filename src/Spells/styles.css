@@ -11,13 +11,18 @@
 }
 
 .names {
-    grid-row: 1;
     text-align: center;
-    color: #A68549;
-    margin: 0 25px;
-    padding: 5px;
-    font-weight: bold;
-    text-decoration: underline;
+    color: black;
+    margin: 5px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.spells-box {
+    text-align: justify-all;
+    color: saddlebrown;
+    margin: 5px;
+    font-weight: bolder;
 }
 
 .spells-list {
@@ -31,18 +36,6 @@
     list-style-type: none;
 }
 
-.spell-type {
-    text-align: center;
-    color: black;
-    margin: -15px -10px;
-}
-
-.spell-effect {
-    color: #A68549;
-    margin: 20px;
-    text-align: center;
-}
-
 .title {
-    font-size: 40px;
+    font-size: 35px;
 }

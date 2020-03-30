@@ -13,7 +13,7 @@
     padding: 5px;
     font-weight: bold;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .house-box {
@@ -38,7 +38,7 @@
 .house-title {
     display: inline-block;
     color: #A68549;
-    margin: 50px 450px;
+    margin: 50px 500px;
 }
 
 .link-back {
@@ -52,10 +52,6 @@
     margin: 5px;
 }
 
-.info {
-    margin: 0;
-}
-
 .house-details-header-h4 {
     display: inline-block;
     font-weight: bold;
@@ -67,21 +63,9 @@
     width: 100px;
 }
 
-.house-p-tag {
-    margin: 0;
-}
-
 .table-container {
     display: grid;
     grid-template-columns: 1fr .1fr;
-    margin: 10px 0 0 220px;
-    max-width: 150px;
-}
-
-.table-values {
-    grid-column: 1;
-}
-
-.table-colors {
-    grid-column: 2;
+    margin: 10px 220px;
+    text-align: left;
 }
