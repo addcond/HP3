@@ -1,0 +1,42 @@
+.Game {
+    text-align: center;
+}
+
+.actionContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.symbol {
+    margin:30px;
+    font-size: 54px;
+    cursor: pointer;
+}
+
+.symbol:hover {
+    background-color: green;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 12px -14px 28px 0 rgba(0,0,0,0.75);
+}
+
+.score-titles {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+}
+
+.score-computer {
+    display: inline-block;
+    height: 40px;
+}
+
+.scoreUser,
+.scoreComp {
+    display: inline-block;
+    margin-right: 9px;
+    font-size: 45px;
+}
