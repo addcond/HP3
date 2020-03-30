@@ -4,11 +4,10 @@ import Duel from "./duel";
 import "./styles.css";
 
 function Game() {
-
   return (
     <>
       <div className="Game">
-          <Duel />
+        <Duel />
       </div>
     </>
   );

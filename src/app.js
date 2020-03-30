@@ -20,7 +20,6 @@ import Hat from "./Hat/hat";
 import Game from "./Duels/game";
 import "./styles.css";
 
-
 class App extends Component {
   state = {
     loading: true,
