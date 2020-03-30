@@ -9,17 +9,20 @@ class Actions extends Component {
           data-action="Curse"
           className="symbol"
         >
-          Curse
+            Curse
         </span>
-        <span onClick={this.props.onClick} data-action="Hex" className="symbol">
-          Hex
+        <span
+            onClick={this.props.onClick}
+            data-action="Hex"
+            className="symbol">
+            Hex
         </span>
         <span
           onClick={this.props.onClick}
           data-action="Charm"
           className="symbol"
         >
-          Charm
+            Charm
         </span>
       </div>
     );

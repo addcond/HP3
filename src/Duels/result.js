@@ -5,7 +5,7 @@ class Result extends Component {
     return (
       <div className="resultContainer">
         <p>{this.props.resultMessage}</p>
-        <p>the computer chose:{this.props.computerChosenAction}</p>
+        <p>Opponent use: {this.props.computerChosenAction}</p>
       </div>
     );
   }
